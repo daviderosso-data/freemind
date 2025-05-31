@@ -45,7 +45,7 @@ useEffect(() => {
   
   return (
     <div className=" relative h-150 m-12 bg-teal-600 drop-shadow-xl/50 rounded-full flex flex-col items-center justify-center text-white">
-      <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-70 rounded-full p-2"> 
+      <video playsInline autoPlay loop muted className="absolute inset-0 w-full h-full object-cover opacity-70 rounded-full p-2"> 
         <source src={video} type="video/mp4" />
       </video>
       <div className="relative z-10 flex flex-col items-center text-center p-4">

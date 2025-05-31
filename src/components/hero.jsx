@@ -6,7 +6,8 @@ function HeroSection() {
       <video  className="absolute top-0 left-0 w-full h-full object-cover "
         autoPlay
         muted
-        loop>
+        loop
+        playsInline>
         <source src="/assets/video/herovideo1.mp4" type="video/mp4" />
         Il tuo browser non supporta il video.
       </video>
