@@ -7,7 +7,7 @@ function HeroSection() {
         autoPlay
         muted
         loop>
-        <source src="../src/assets/video/herovideo1.mp4" type="video/mp4" />
+        <source src="/assets/video/herovideo1.mp4" type="video/mp4" />
         Il tuo browser non supporta il video.
       </video>
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-teal-600/40 space-y-6">
