@@ -1,0 +1,19 @@
+import HeroSchedaCustom from "../components/heroSchedaCustom";
+import Menu from "../components/menu";
+import Footer from "../components/footer";
+
+
+export default function MeditationDetails() {
+
+
+ 
+  return (
+    <div>
+        <Menu />
+    
+        <HeroSchedaCustom descrizione="Scegli il tempo che vuoi dedicare alla meditazione e la musica di sottofondo"  title="Personalizza la tua sessione" picture="/assets/images/zenBreath.jpg"  />
+   
+      <Footer/>
+    </div>
+  );
+}

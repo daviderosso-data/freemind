@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Wallpoet&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-display: "DynaPuff", system-ui;
+}
