@@ -1,11 +1,14 @@
  .slide-item { 
           transition: all 1s ease-in-out;
         }
+
+
 @media (min-width: 1024px) {
 .slick-center .slide-item {
    
           transform: scale(1.05); 
 }}
+
 .slick-center,
 .slick-current {
   box-shadow: none !important;

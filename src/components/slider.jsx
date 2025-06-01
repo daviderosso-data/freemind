@@ -1,3 +1,6 @@
+// componente che gestisce lo slider delle lezioni di meditazione
+
+
 import Slider from "react-slick";
 import './slider.css'
 

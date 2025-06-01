@@ -1,3 +1,5 @@
+// Footer con link di navigazione e logo
+
 export default function FooterWithLogo() {
 
   return (

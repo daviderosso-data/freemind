@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Meditazione from './pages/Meditazione';
 import MeditazioneScheda from './pages/SchedaMeditazione';
 import CustomMeditation from './pages/CustomMeditation';
+import NotFound from './pages/404';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,10 +25,7 @@ function App() {
         <Route path="/meditazione/:id" element={<MeditazioneScheda />} />
         <Route path="/meditazionecustom" element={<CustomMeditation />} />
         <Route path="/privacy-policy" element={<Home />} />
-
-      
-        
-        <Route path="*" element={<div>Pagina non trovata. Torna alla <a href="/">Home</a>.</div>} />
+        <Route path="*" element={<NotFound/> } />
       </Routes>
     </Router>
   );

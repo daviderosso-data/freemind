@@ -42,6 +42,9 @@
    ```bash
    npm run dev
    ```
+## Link alla Demo
+
+https://freeminds2i.netlify.app/
 
 ## Autore
 

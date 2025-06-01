@@ -2,19 +2,18 @@ import React, { useState, useEffect, useRef } from "react";
 
 
 export default function MeditationSection({ onClose,timer, video, audio }) {
-  const [time, setTime] = useState(timer); // Imposta il timer in secondi
+  const [time, setTime] = useState(60 * timer); 
   const [isPaused, setIsPaused] = useState(false); 
-  const endAudioRef = useRef(new Audio("/assets/audio/gong.mp3")); // Audio da riprodurre alla fine
+  const endAudioRef = useRef(new Audio("/assets/audio/gong.mp3")); 
   const audioRef = useRef(null); 
   const [text, setText] = useState("Prenditi un momento per te stesso, rilassati e respira profondamente.");
 
-  // Effetto per il countdown del timer
+
   useEffect(() => {
     if (time > 0 && !isPaused) {
       const timer = setTimeout(() => setTime(time - 1), 1000);
       return () => clearTimeout(timer);
     } else if (time === 0) {
-      // Se il timer arriva a 0, chiude la sezione
       if (endAudioRef.current) {
         audioRef.current.pause();
         endAudioRef.current.play();
@@ -22,21 +21,20 @@ export default function MeditationSection({ onClose,timer, video, audio }) {
       }
       setText("Tempo scaduto! Spero che tu abbia trovato un momento di pace e tranquillità.");
       setTimeout(() => {
-      onClose();}, 5000); // Chiude dopo 1 secondo
+      onClose();}, 5000); 
     }
   }, [time, isPaused, onClose]);
 
 useEffect(() => {
     if (audioRef.current) {
       if (isPaused) {
-        audioRef.current.pause(); // Pausa audio
+        audioRef.current.pause(); 
       } else {
-        audioRef.current.play().catch((err) => console.error(err)); // Avvia audio
+        audioRef.current.play().catch((err) => console.error(err)); 
       }
     }
   }, [isPaused]);
 
-  // Conversione dei secondi in formato MM:SS
   const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;

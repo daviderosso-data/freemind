@@ -1,3 +1,5 @@
+// componente CTA nella Home page
+
 export default function Cta() {
     return (
         <div className="flex flex-col lg:flex-row m-10">

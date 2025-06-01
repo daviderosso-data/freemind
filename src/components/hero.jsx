@@ -1,3 +1,5 @@
+// Hero section presente in home page con video di sfondo, titolo e sottotitolo
+
 
 function HeroSection() {
   return (

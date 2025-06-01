@@ -1,4 +1,6 @@
-export default function cta_customMeditation() {
+// Componente cta per la pagina di meditazione
+
+export default function CtaCustomMeditation() {
     return (
         <div className="flex flex-col lg:flex-row m-10">
       

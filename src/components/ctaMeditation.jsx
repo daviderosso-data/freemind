@@ -1,9 +1,11 @@
+// Cta per la pagina di meditazione
+
+
 import MeditationSection from "./meditationSection";
 import { useState } from "react";
 
-export default function HeroScheda({descrizione, title, timer, picture, video, audio}) {
+export default function CtaMeditation({descrizione, title, timer, picture, video, audio}) {
   const [isMeditationActive, setIsMeditationActive] = useState(false);
-
 
     return (
         

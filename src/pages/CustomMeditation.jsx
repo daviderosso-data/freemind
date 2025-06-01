@@ -1,12 +1,11 @@
-import HeroSchedaCustom from "../components/heroSchedaCustom";
+//pagina di meditazione personalizzata
+
+import HeroSchedaCustom from "../components/ctaMeditationCustom";
 import Menu from "../components/menu";
 import Footer from "../components/footer";
 
 
 export default function MeditationDetails() {
-
-
- 
   return (
     <div>
         <Menu />

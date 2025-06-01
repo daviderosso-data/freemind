@@ -1,8 +1,11 @@
+// pagina di meditazione 
+
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import HeroScheda from "../components/heroScheda";
+import CtaMeditation from "../components/ctaMeditation";
 import Menu from "../components/menu";
 import Footer from "../components/footer";
+import NotFound from "../components/NotFound";
 
 
 export default function MeditationDetails() {
@@ -35,20 +38,9 @@ export default function MeditationDetails() {
     <div>
         <Menu />
       {meditation ? (
-        <HeroScheda descrizione={meditation.description} timer={meditation.duration} title={meditation.name} picture={meditation.picture} video={meditation.video} audio={meditation.audio} />
+        <CtaMeditation descrizione={meditation.description} timer={meditation.duration} title={meditation.name} picture={meditation.picture} video={meditation.video} audio={meditation.audio} />
       ) : (
-        // Se l'id non è valido, mostra un messaggio di errore
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-red-600">Meditazione non trovata</h1>
-          <p className="mt-4 text-gray-700">L'id fornito non corrisponde a nessuna meditazione disponibile.</p>
-          <a
-            href="/"
-            className="mt-6 block px-4 py-2 bg-blue-500 text-white text-center rounded-lg hover:bg-blue-600 transition-all"
-          >
-            Torna alla Home
-          </a>
-        </div>
-      )}
+        <NotFound />)}
       <Footer/>
     </div>
   );

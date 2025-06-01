@@ -1,3 +1,4 @@
+// Componente che mostra il menu di navigazione nella parte superiore della pagina
 
 function Menu(){
 
