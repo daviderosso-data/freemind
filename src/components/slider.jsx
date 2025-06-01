@@ -30,7 +30,7 @@ export default function SliderCards({ picture, color }) {
   };
     return (
         
-       <div className="w-full overflow-x-auto tmb-100 mt-10">
+       <div className="w-full overflow-x-auto tmb-100 p-10">
         <Slider {...settings}>
             {picture.map((item, index) => (
                 <div key={index} className="slide-item p-4 relative min-w-[300px] min-h-[300px] ">
