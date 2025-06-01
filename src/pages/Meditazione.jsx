@@ -39,13 +39,13 @@ export default function Meditazione() {
        <div className="h-screen w-screen owerflow-hidden m-0 p-0">
     <Menu />
     <CustomMed />
-    <div className={`text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900 ml-30 z-10`}>Meditazione in Silenzio:</div>
+    <div className={`text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900  ml-5 lg:ml-30 z-10`}>Meditazione in Silenzio:</div>
     <SliderCards picture={silentMeditation} color="bg-emerald-600/60"></SliderCards>
-    <div className=" text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900 ml-30 z-10">Meditazione con suoni della natura:</div>
+    <div className=" text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900  ml-5 lg:ml-30 z-10">Meditazione con suoni della natura:</div>
     <SliderCards picture={soundMeditation} color="bg-purple-600/60"></SliderCards>
-    <div className=" text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900 ml-30 z-10">Meditazione con musica:</div>
+    <div className=" text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900  ml-5 lg:ml-30 z-10">Meditazione con musica:</div>
     <SliderCards picture={musicMeditation} color="bg-lime-600/60"></SliderCards>
-    <div className=" text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900 ml-30 z-10">Meditazione zen:</div>
+    <div className=" text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900  ml-5 lg:ml-30 z-10">Meditazione zen:</div>
     <SliderCards picture={zenMeditation} color="bg-teal-600/60"></SliderCards>
     
     <Footer />

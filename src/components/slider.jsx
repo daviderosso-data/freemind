@@ -30,7 +30,7 @@ export default function SliderCards({ picture, color }) {
   };
     return (
         
-       <div className="w-full overflow-x-auto tmb-100 p-10">
+       <div className="w-full overflow-x-auto tmb-100 mt-10">
         <Slider {...settings}>
             {picture.map((item, index) => (
                 <div key={index} className="slide-item p-4 relative min-w-[300px] min-h-[300px] ">
@@ -39,7 +39,7 @@ export default function SliderCards({ picture, color }) {
                     <img src={item.picture} alt={item.name} className="rounded-lg"></img>
 
                     </div>
-                 <span className={`absolute inset-0 mt-50 flex items-center justify-center ml-6 mr-6 rounded-lg`+ ` ${defaultColor}`}>
+                 <span className={`absolute inset-0 mt-50 flex items-center justify-center ml-6 mr-6 rounded-lg text-center`+ ` ${defaultColor}`}>
                        <a href={`meditazione/${item.id}`}> <h2 className="text-3xl font-body font-bold text-white">{item.name}</h2>  
                        <p className="text-xl font-body text-white">Durata: {item.duration} minuti</p> </a>
                     </span>

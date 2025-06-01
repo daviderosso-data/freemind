@@ -33,9 +33,9 @@ import SliderCards from '../components/slider';
     <div className="h-screen w-screen owerflow-hidden m-0 p-0">
     <Menu />
     <HeroSection></HeroSection>
-    <div className=" realtive text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900 ml-30 z-10">Le meditazioni preferite:</div>
+    <div className="  relative text-2xl font-bold text-left mt-10 mb-5 font-body text-teal-900 ml-5 lg:ml-30 z-10">Le meditazioni preferite:</div>
     <SliderCards picture={favourites}></SliderCards>
-    <div className=" realtive text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900 ml-30 z-10">Le meditazioni veloci:</div>
+    <div className=" relative text-2xl font-bold text-left mt-10 -mb-10 font-body text-teal-900  ml-5 lg:ml-30 z-10">Le meditazioni veloci:</div>
     <SliderCards picture={fastMeditations}></SliderCards>
     <Cta />
     <Footer />
