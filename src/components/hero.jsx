@@ -1,7 +1,7 @@
 
 function HeroSection() {
   return (
-    <section className="relative h-[600px] w-screen drop-shadow-xl/50">
+    <section className="relative h-[600px] w-screen drop-shadow-xl">
 
       <video  className="absolute top-0 left-0 w-full h-full object-cover "
         autoPlay
