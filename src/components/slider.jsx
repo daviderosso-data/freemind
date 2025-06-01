@@ -16,13 +16,14 @@ export default function SliderCards({ picture, color }) {
         breakpoint: 1280, // sotto i 1024px mostra 2 slide
         settings: {
           slidesToShow: 2,
-        
+          centerPadding: "40px"
         }
       },
       {
         breakpoint: 840, // sotto i 640px mostra 1 slide
         settings: {
           slidesToShow: 1,
+          centerPadding: "15px",
           
         }
       }
