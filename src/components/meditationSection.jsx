@@ -6,7 +6,7 @@ export default function MeditationSection({ onClose,timer, video, audio }) {
   const [isPaused, setIsPaused] = useState(false); 
   const endAudioRef = useRef(new Audio("/assets/audio/gong.mp3")); 
   const audioRef = useRef(null); 
-  const [text, setText] = useState("Prenditi un momento per te stesso, rilassati e respira profondamente.");
+  const [text, setText] = useState("Prenditi un momento, rilassati e respira profondamente.");
 
 
   useEffect(() => {
