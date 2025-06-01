@@ -41,7 +41,7 @@ export default function HeroScheda({descrizione, title, picture}) {
         
         <>
         <div className="flex flex-col lg:flex-row m-10">
-            <div className="flex-1 mb:flex-none bg-teal-600/70 text-white p-8 flex flex-col items-center justify-center rounded-lg drop-shadow-xl/30 m-3 ">
+            <div className="flex-1 mb:flex-none bg-teal-600/70 text-white p-8 flex flex-col items-center justify-center rounded-lg drop-shadow-xl m-3 ">
                   <h2 className="text-3xl text-center font-body font-bold mb-4">{title}</h2>
         <p className="mb-6 text-xl text-center justify-center">{descrizione}</p>
 
@@ -75,7 +75,7 @@ Avvia Ora</button>
 <a href="/meditazione" className="text-teal-900 underline mt-10 transition duration-300 hover:scale-110 hover:text-white" >Torna indietro</a>
 
                 </div>
-        <div className="flex-1 mb:flex-none p-3 flex flex-col items-center justify-center mb:drop-shadow-xl/30">
+        <div className="flex-1 mb:flex-none p-3 flex flex-col items-center justify-center drop-shadow-xl">
             <img src={picture} alt="Meditazione" className="rounded-lg transition duration-1200 hover:scale-105 hover:rotate-3" />
             
             </div>
