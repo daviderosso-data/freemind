@@ -35,7 +35,7 @@ export default function MeditationDetails() {
     );
   }
   return (
-    <div>
+    <div className="h-screen w-screen owerflow-hidden m-0 p-0">
         <Menu />
       {meditation ? (
         <CtaMeditation descrizione={meditation.description} timer={meditation.duration} title={meditation.name} picture={meditation.picture} video={meditation.video} audio={meditation.audio} />

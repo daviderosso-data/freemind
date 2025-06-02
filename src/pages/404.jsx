@@ -4,7 +4,7 @@ import NotFound from '../components/NotFound';
 
 export default function NotFoundPage() {
     return (
-        <div>
+        <div className="h-screen w-screen owerflow-hidden m-0 p-0">
         <Menu />
         <NotFound />
         <Footer />
