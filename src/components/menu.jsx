@@ -5,7 +5,7 @@ function Menu(){
 return(
     <nav className="bg-white w-full z-10">
          <div className="max-w-screen-xl mx-auto flex justify-between items-center p-2">
-        <h1 className="text-3xl font-bold font-display text-amber-600">FreeMind</h1>
+        <h1 className="text-3xl font-bold font-display text-amber-600">FreeMind Dev</h1>
         <ul className="flex space-x-3 pr-2 text-xl text-amber-900 text-bold font-body">
             <li>
             <a href="/" className="hover:underline decoration-teal-400 transition">Home</a>
